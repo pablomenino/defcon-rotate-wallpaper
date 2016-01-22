@@ -27,20 +27,25 @@ sudo dnf install gsettings-desktop-schemas
 
 #### Usage
 
-To-Do
-
-```bash
-$ 
-```
-Or
-
-```bash
-$ 
-```
-
 Manually add the script to the user crontab.
 
-To-Do
+List crontab jobs for the current user:
+
+```bash
+crontab -l
+```
+
+Edit crontab jobs for the current user:
+
+```bash
+crontab -e
+```
+
+Add this line to the crontab jobs list for the user. Change PATH-TO-SCRIPT to the directory where the defcon-rotate-wallpaper.sh is.
+
+```
+0 * * * * /PATH-TO-SCRIPT/defcon-rotate-wallpaper/defcon-rotate-wallpaper.sh --rotate
+```
 
 ## <a name="credit">Credit
 

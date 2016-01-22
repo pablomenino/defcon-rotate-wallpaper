@@ -25,16 +25,26 @@ script_dir=$( cd ${0%/*} && pwd -P )
 # The value is stored on variable "$default_theme"
 
 SECTION="theme"
-config_parser "$scriptdir/defcon-rotate-wallpaper.config" $SECTION
+config_parser "$script_dir/defcon-rotate-wallpaper.config" $SECTION
 
 #----------------------------------------------------------------------------------------
 # Calculate file to ratate wallpaper based on the selected theme
 
 # get the our in 24 format
-hourfile="$(date -d "today" +"%H")"
+# hourfile="$(date -d "today" +"%H")"
+
+hourfile="00"
 
 # get wallpaper filename
-rotatefile="file://$scriptdir/themes/$default_theme/$default_theme_$hourfile.png"
+rotatefile="file://"
+rotatefile+=$script_dir
+rotatefile+="/themes/"
+rotatefile+=$default_theme
+rotatefile+="/"
+rotatefile+=$default_theme
+rotatefile+="_"
+rotatefile+=$hourfile
+rotatefile+=".png"
 
 #----------------------------------------------------------------------------------------
 # Get params
@@ -53,6 +63,7 @@ fi
 # Rotate wallpaper based on current hour
 
 if [ "$OPERATION" == "--rotate" ]; then
+    # Rotate Wallpaper
 	gsettings set org.gnome.desktop.background picture-uri "$rotatefile"
 fi
 
