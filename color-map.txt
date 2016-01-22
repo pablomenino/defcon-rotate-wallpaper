@@ -1,3 +1,5 @@
+Information of the color map used on the images.
+
 Hour: 00:00 --> Global-Map_00.png --> ff2400
 Hour: 01:00 --> Global-Map_01.png --> ff3800
 Hour: 02:00 --> Global-Map_02.png --> ff7200
