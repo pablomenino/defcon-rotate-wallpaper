@@ -12,9 +12,9 @@ This support themes (of group of image) that can be added to a new directory and
 
 #### Requirements
 
-Gnome 3
-Was tested on Fedora 23.
-The scripts need the gsettings-desktop-schemas package to change the wallpaper.
+* Gnome 3
+* Was tested on Fedora 23.
+* The scripts need the gsettings-desktop-schemas package to change the wallpaper.
 
 On Fedora 23:
 sudo dnf install gsettings-desktop-schemas
