@@ -1,0 +1,25 @@
+Hour: 00:00 --> Global-Map_00.png --> ff2400
+Hour: 01:00 --> Global-Map_01.png --> ff3800
+Hour: 02:00 --> Global-Map_02.png --> ff7200
+Hour: 03:00 --> Global-Map_03.png --> ffcb6e
+Hour: 04:00 --> Global-Map_04.png --> ffffa2
+Hour: 05:00 --> Global-Map_05.png --> ffffce
+Hour: 06:00 --> Global-Map_06.png --> White --> ffffff
+Hour: 07:00 --> Global-Map_07.png --> beff87
+Hour: 08:00 --> Global-Map_08.png --> 57ff6a
+Hour: 09:00 --> Global-Map_09.png --> 32ff50
+Hour: 10:00 --> Global-Map_10.png --> Green --> 00ff00
+Hour: 11:00 --> Global-Map_11.png --> 00bf4c
+Hour: 12:00 --> Global-Map_12.png --> 00919b
+Hour: 13:00 --> Global-Map_13.png --> 0053db
+Hour: 14:00 --> Global-Map_14.png --> Blue --> 0000ff
+Hour: 15:00 --> Global-Map_15.png --> 5800ff
+Hour: 16:00 --> Global-Map_16.png --> aa00ff
+Hour: 17:00 --> Global-Map_17.png --> dd00ff
+Hour: 18:00 --> Global-Map_18.png --> Violet --> ff00ff
+Hour: 19:00 --> Global-Map_19.png --> ff00d9
+Hour: 20:00 --> Global-Map_20.png --> ff0096
+Hour: 21:00 --> Global-Map_21.png --> ff005e
+Hour: 22:00 --> Global-Map_22.png --> ff0030
+Hour: 23:00 --> Global-Map_23.png --> Red --> ff0000
+

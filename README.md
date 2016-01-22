@@ -1,9 +1,10 @@
 # defcon-rotate-wallpaper
 
-Is a rotate wallpaper for Gnome based on Defcon world map. This change the color for the current time.
+defcon-rotate-wallpaper is 1080p wallpaper for Gnmoe 3 that change the color over time.
 
-This support themes (of group of image) that can be added to a new directory and can be added to the configuration file.
+defcon-rotate-wallpaper support themes (group of image) that can be added to a new directory, and in the configuration file you can select the theme to use.
 
+This script was tested on Fedora 23 and Ubuntu 14.04, but is supposed to work on all linux distributions.
 
 ## Table of contents
 
@@ -15,10 +16,10 @@ This support themes (of group of image) that can be added to a new directory and
 #### Requirements
 
 * Gnome 3
-* Was tested on Fedora 23.
+* BASH
 * The scripts need the gsettings-desktop-schemas package to change the wallpaper.
 
-On Fedora 23:
+To install gsettings-desktop-schemas On Fedora 23:
 
 ```bash
 sudo dnf install gsettings-desktop-schemas
@@ -36,6 +37,10 @@ Or
 ```bash
 $ 
 ```
+
+Manually add the script to the user crontab.
+
+To-Do
 
 ## <a name="credit">Credit
 
