@@ -6,6 +6,9 @@ defcon-rotate-wallpaper support themes (group of image) that can be added to a n
 
 This script was tested on Fedora 23 and Ubuntu 14.04, but is supposed to work on all linux distributions.
 
+[[https://github.com/pablomenino/defcon-rotate-wallpaper/master/doc/ani.gif|alt=screenshot]]
+
+
 ## Table of contents
 
 * [How to Use](#how-to-use)

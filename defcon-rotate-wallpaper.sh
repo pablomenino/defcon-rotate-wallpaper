@@ -31,9 +31,7 @@ config_parser "$script_dir/defcon-rotate-wallpaper.config" $SECTION
 # Calculate file to ratate wallpaper based on the selected theme
 
 # get the our in 24 format
-# hourfile="$(date -d "today" +"%H")"
-
-hourfile="00"
+hourfile="$(date -d "today" +"%H")"
 
 # get wallpaper filename
 rotatefile="file://"
