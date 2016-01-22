@@ -46,7 +46,7 @@ crontab -e
 Add this line to the crontab jobs list for the user. Change PATH-TO-SCRIPT to the directory where the defcon-rotate-wallpaper.sh is.
 
 ```
-0 * * * * /PATH-TO-SCRIPT/defcon-rotate-wallpaper/defcon-rotate-wallpaper.sh --rotate
+0 * * * * /PATH-TO-SCRIPT/defcon-rotate-wallpaper.sh --rotate
 ```
 
 ## <a name="credit">Credit
