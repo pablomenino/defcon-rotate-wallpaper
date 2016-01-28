@@ -64,14 +64,20 @@ On kernel version kernel-4.3.3-300.fc23.x86_64, there is a bug whit SElinux/cron
 
 You can check if you have this type of errors:
 
-# sudo systemctl status cron
+```
+$ sudo systemctl status cron
+```
 
+```
 Jan 28 13:27:01 LAB01 crond[1127]: (username) Unauthorized SELinux context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c....username)
 Jan 28 13:27:01 LAB01 crond[1127]: (usernameo) FAILED (loading cron table)
+```
 
 Or in journal:
 
+```
 **Unauthorized SELinux context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 file_context=unconfined_u:object_r:user_cron_spool_t:s0**
+```
 
 This is an error whit cron and SElinux configured in Enforcing mode (This doesn't happens whit SElinux in permissive mode).
 
@@ -79,25 +85,35 @@ There is a workaround to fix this issue:
 
 create a file:
 
+```
 $ vi mycron.cil
+```
 
 Add this to the file:
 
+```
 (allow unconfined_t user_cron_spool_t( file ( entrypoint)))
+```
 
 And run:
 
+```
 $ sudo semodule -i mycron.cil
+```
 
 Then reload cron:
 
+```
 $ sudo systemctl restart cron
+```
 
 This workaround is persistent to reboots.
 
 To remove this workaround, you can execute:
 
+```
 $ sudo semodule -r mycron
+```
 
 ## <a name="credit">Credit
 
