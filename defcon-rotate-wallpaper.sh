@@ -45,8 +45,11 @@ rotatefile+=$hourfile
 rotatefile+=".png"
 
 #----------------------------------------------------------------------------------------
-# Get params
+# Get current wallpaper
+current_wall=$(gsettings get org.gnome.desktop.background picture-uri)
 
+#----------------------------------------------------------------------------------------
+# Get params
 OPERATION=$1
 
 #----------------------------------------------------------------------------------------
@@ -62,7 +65,11 @@ fi
 
 if [ "$OPERATION" == "--rotate" ]; then
     # Rotate Wallpaper
-	gsettings set org.gnome.desktop.background picture-uri "$rotatefile"
+	# If diferent file, change	
+	if [[ $current_wall != *"$rotatefile"* ]]
+	then
+		gsettings set org.gnome.desktop.background picture-uri "$rotatefile"
+	fi
 fi
 
 #----------------------------------------------------------------------------------------
