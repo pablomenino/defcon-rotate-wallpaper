@@ -1,5 +1,7 @@
 # defcon-rotate-wallpaper
 
+**Version 0.4**
+
 defcon-rotate-wallpaper is 1080p wallpaper for Gnmoe 3 that change the color over time.
 
 defcon-rotate-wallpaper support themes (group of image) that can be added to a new directory, and in the configuration file you can select the theme to use.
@@ -64,7 +66,7 @@ On kernel version kernel-4.3.3-300.fc23.x86_64, there is a bug whit SElinux/cron
 
 You can check if you have this type of errors:
 
-```
+```bash
 $ sudo systemctl status cron
 ```
 
@@ -85,7 +87,7 @@ There is a workaround to fix this issue:
 
 create a file:
 
-```
+```bash
 $ vi mycron.cil
 ```
 
@@ -97,13 +99,13 @@ Add this to the file:
 
 And run:
 
-```
+```bash
 $ sudo semodule -i mycron.cil
 ```
 
 Then reload cron:
 
-```
+```bash
 $ sudo systemctl restart cron
 ```
 
@@ -111,7 +113,7 @@ This workaround is persistent to reboots.
 
 To remove this workaround, you can execute:
 
-```
+```bash
 $ sudo semodule -r mycron
 ```
 

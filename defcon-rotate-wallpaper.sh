@@ -1,5 +1,15 @@
 #!/bin/bash
+
+#----------------------------------------------------------------------------------------
 # defcon-rotate-wallpaper
+# Version: 0.4
+# 
+# WebSite:
+# http://pablomenino.github.io/defcon-rotate-wallpaper/
+# https://github.com/pablomenino/defcon-rotate-wallpaper
+# 
+# Copyright © 2016 - Pablo Meniño <pablo.menino@gmail.com>
+#----------------------------------------------------------------------------------------
 
 #----------------------------------------------------------------------------------------
 # Config Parser

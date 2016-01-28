@@ -1,0 +1,16 @@
+Change Log:
+
+    * 0.4 (28-01-2016)
+      + Crontab documentation fix
+      + change crontab running time
+
+    * 0.3 (08-12-2015)
+      + Fix directory
+      + get current wallpaper
+
+    * 0.2 (12-11-2015)
+      + Version control
+      + crontab documentation
+
+    * 0.1 (10-11-2015)
+      + Initial testing release
