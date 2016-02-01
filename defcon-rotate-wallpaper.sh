@@ -2,7 +2,7 @@
 
 #----------------------------------------------------------------------------------------
 # defcon-rotate-wallpaper
-# Version: 0.4
+# Version: 0.5
 # 
 # WebSite:
 # http://pablomenino.github.io/defcon-rotate-wallpaper/
@@ -63,6 +63,13 @@ current_wall=$(gsettings get org.gnome.desktop.background picture-uri)
 OPERATION=$1
 
 #----------------------------------------------------------------------------------------
+# Get Gnome Session (Change Wallpaper from Crontab)
+
+PID=$(pgrep -u $USER gnome-session)
+# PID=$(pgrep gnome-session)
+export DBUS_SESSION_BUS_ADDRESS=$(grep -z DBUS_SESSION_BUS_ADDRESS /proc/$PID/environ|cut -d= -f2-)
+
+#----------------------------------------------------------------------------------------
 # If no parameter selected, show some information.
 
 if [ "$OPERATION" == "" ]; then
@@ -75,7 +82,7 @@ fi
 
 if [ "$OPERATION" == "--rotate" ]; then
     # Rotate Wallpaper
-	# If diferent file, change	
+	# If diferent wallpaper file, change it
 	if [[ $current_wall != *"$rotatefile"* ]]
 	then
 		gsettings set org.gnome.desktop.background picture-uri "$rotatefile"
