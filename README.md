@@ -55,7 +55,7 @@ crontab -e
 Add this line to the crontab jobs list for the user. Change PATH-TO-SCRIPT to the directory where the defcon-rotate-wallpaper.sh is.
 
 ```
-*/2 * * * * /PATH-TO-SCRIPT/defcon-rotate-wallpaper.sh --rotate
+*/2 * * * * /PATH-TO-SCRIPT/defcon-rotate-wallpaper.sh --rotate  >/dev/null 2>&1
 ```
 
 ## <a name="known-bugs">Known Bugs
