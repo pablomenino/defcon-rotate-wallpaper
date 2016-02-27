@@ -23,6 +23,7 @@ This script was tested on Fedora 23 and Ubuntu 14.04, but is supposed to work on
 * Gnome 3
 * BASH
 * The scripts need the gsettings-desktop-schemas package to change the wallpaper.
+* gsettings
 
 To install gsettings-desktop-schemas On Fedora 23:
 
