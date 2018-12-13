@@ -73,6 +73,3 @@ You can follow the link for the workarround.
 
 * **Defcon Game** The images are inspired on this game.
 * **CampoSanto Theme** Images copyright [CampoSanto](http://blog.camposanto.com/post/138965082204/firewatch-launch-wallpaper-when-we-redid-the) - Walppaper from [SuperToaster94](https://imgur.com/gallery/D6ia1)
-
-
-

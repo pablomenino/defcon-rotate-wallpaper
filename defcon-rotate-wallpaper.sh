@@ -2,13 +2,13 @@
 
 #----------------------------------------------------------------------------------------
 # defcon-rotate-wallpaper
-# Version: 0.5
+# Version: 0.6
 # 
 # WebSite:
 # http://pablomenino.github.io/defcon-rotate-wallpaper/
 # https://github.com/pablomenino/defcon-rotate-wallpaper
 # 
-# Copyright © 2016 - Pablo Meniño <pablo.menino@gmail.com>
+# Copyright © 2018 - Pablo Meniño <pablo.menino@gmail.com>
 #----------------------------------------------------------------------------------------
 
 #----------------------------------------------------------------------------------------
@@ -54,9 +54,24 @@ rotatefile+="_"
 rotatefile+=$hourfile
 rotatefile+=".png"
 
+# get wallpaper lock screen filename
+rotatefile_lockscreen="file://"
+rotatefile_lockscreen+=$script_dir
+rotatefile_lockscreen+="/themes/"
+rotatefile_lockscreen+=$default_theme
+rotatefile_lockscreen+="/"
+rotatefile_lockscreen+=$default_theme
+rotatefile_lockscreen+="_"
+rotatefile_lockscreen+="LockScreen"
+rotatefile_lockscreen+=".png"
+
 #----------------------------------------------------------------------------------------
 # Get current wallpaper
 current_wall=$(gsettings get org.gnome.desktop.background picture-uri)
+
+#----------------------------------------------------------------------------------------
+# Get current wallpaper lock screen
+current_lockscreen_wall=$(gsettings get org.gnome.desktop.screensaver picture-uri)
 
 #----------------------------------------------------------------------------------------
 # Get params
@@ -87,9 +102,14 @@ fi
 if [ "$OPERATION" == "--rotate" ]; then
     # Rotate Wallpaper
 	# If diferent wallpaper file, change it
+
 	if [[ $current_wall != *"$rotatefile"* ]]
 	then
 		gsettings set org.gnome.desktop.background picture-uri "$rotatefile"
+	fi
+	if [[ $current_lockscreen_wall != *"$rotatefile_lockscreen"* ]]
+	then
+		gsettings set org.gnome.desktop.screensaver picture-uri "$rotatefile_lockscreen"
 	fi
 fi
 
