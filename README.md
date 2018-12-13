@@ -1,6 +1,6 @@
 # defcon-rotate-wallpaper
 
-**Version 0.5**
+**Version 0.6**
 
 defcon-rotate-wallpaper is 1080p wallpaper for Gnmoe 3 that change the color over time.
 
@@ -71,4 +71,8 @@ You can follow the link for the workarround.
 
 ## <a name="credit">Credit
 
-[**Defcon Game**] The images are inspired on this game.
+* **Defcon Game** The images are inspired on this game.
+* **CampoSanto Theme** Images copyright [CampoSanto](http://blog.camposanto.com/post/138965082204/firewatch-launch-wallpaper-when-we-redid-the) - Walppaper from [SuperToaster94](https://imgur.com/gallery/D6ia1)
+
+
+
