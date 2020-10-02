@@ -2,8 +2,8 @@
 <p align="center">defcon-rotate-wallpaper is 1080p wallpaper for Gnmoe 3 that change the color over time.</p>
 
 <p align="center">
-<a href="https://github.com/pablomenino/defcon-rotate-wallpaper/releases"><img src="https://img.shields.io/github/release/pablomenino/defcon-rotate-wallpaper.svg"></a>
-<a href="./LICENSE"><img src="https://img.shields.io/github/license/pablomenino/defcon-rotate-wallpaper.svg"></a>
+<img src="https://img.shields.io/github/release/pablomenino/defcon-rotate-wallpaper.svg">
+<img src="https://img.shields.io/github/license/pablomenino/defcon-rotate-wallpaper.svg">
 </p>
 
 defcon-rotate-wallpaper is 1080p wallpaper for Gnmoe 3 that change the color over time.
